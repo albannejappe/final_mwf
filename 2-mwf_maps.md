@@ -32,5 +32,4 @@ Explore the spatial distribution of simulated MWF values using the interactive m
 Hover over the map to inspect local MWF values and their spatial coordinates.
 
 :::{include} notebooks/mwf_maps.ipynb
-:tags: [hide-input]
 :::
