@@ -1,32 +1,121 @@
-## Applications
+---
+title: T2 Mapping
+---
 
-:::{dropdown} Original MOOC content
-:open: false
+# T2 Mapping
 
-### Myelin water fraction (MWF) imaging
+## Introduction
 
+T2 Mapping is a quantitative Magnetic Resonance Imaging (MRI) technique used to estimate the transverse relaxation time (T2) of biological tissues.
 
-Myelin water fraction (MWF) imaging demonstrates the clinical relevance of multi-exponential _T_{sub}`2` mapping [@Kumar2012-uv;@MacKay1994-yv], given that myelin quantification could help identify potential biomarkers for diseases such as multiple sclerosis (MS). Although MWF technically does not directly measure myelin but rather quantifies the amount of total water trapped between the myelin sheaths, it is argued that myelin can be conceptualized as water, as it constitutes its primary composition [@Alonso-Ortiz2015-yj]. 
+Unlike conventional T2-weighted MRI, which provides qualitative image contrast, T2 Mapping produces quantitative maps in which each voxel is associated with an estimated T2 value.
 
-Conventional _T_{sub}`2`-weighted images often display hyperintense lesions in MS patients. Unfortunately, these hyperintensities lack specificity for the disease and can be indistinguishable from other biological phenomena such as inflammation, edema and axonal loss [@Alonso-Ortiz2015-yj;@Lee2021-jk]. MWF holds promise as a potential biomarker for identifying early microstructural changes in myelin, which could improve our understanding of demyelinating diseases such as MS, facilitating both early diagnosis and monitoring of disease progression. 
+These quantitative measurements can provide additional information about tissue composition and microstructure.
 
-As described by [](#t2Eq8), MWF represents the proportion of the MRI signal attributed to myelin water relative to the total water content in the brain. This total water content includes myelin water (MW) and intra/extracellular water (IEW), also referred to as axonal water [@Lee2021-jk]. 
+## 1. Physical principles of T2 relaxation
 
-```{math}
-:label: t2Eq8
-:enumerator:3.8
-\begin{equation}
-\textit{MWF} = \frac{S_{MW}}{S_{MW} + S_{IEW}}
-\end{equation}
-```
+T2 relaxation, also known as transverse relaxation, describes the loss of phase coherence between the spins of hydrogen nuclei after the application of an RF excitation pulse.
 
-Direct imaging of myelin itself is challenging due to its very short _T_{sub}`2` relaxation times. Instead, an alternative is to image myelin-associated water (MW), which has slightly longer _T_{sub}`2` relaxation times, typically around 20 ms [@Lee2021-jk]. While these times are still short, they are measurable with standard spin-echo MRI sequences. Myelin Water Fraction (MWF) imaging takes advantage of this to differentiate and quantify the signal from myelin-associated water, providing a more feasible approach to studying myelin. 
+This process leads to a progressive decrease in the transverse magnetization and, consequently, in the measured MRI signal.
 
+For a mono-exponential model, the signal decay can be described by:
 
-This section contains the original course material.
+$$
+S(TE) = S_0 e^{-TE/T_2}
+$$
 
+where:
+
+- $S(TE)$ is the measured signal at echo time $TE$.
+- $S_0$ is the initial signal amplitude.
+- $T_2$ is the transverse relaxation time.
+- $TE$ is the echo time.
+
+The T2 relaxation time characterizes how quickly the transverse MRI signal decays.
+
+## 2. T2 Mapping
+
+T2 Mapping consists of acquiring several images at different echo times and fitting a mathematical model to the measured signal in each voxel.
+
+The estimated T2 values are then combined to generate a quantitative T2 map.
+
+This approach provides information that cannot be obtained directly from a single conventional T2-weighted image.
+
+## 3. Multi-exponential T2 Mapping
+
+Biological tissues contain different water environments, which may exhibit different T2 relaxation times.
+
+Consequently, their MRI signal decay may not be accurately described by a single exponential function.
+
+A multi-exponential model can be used to represent the contributions of different water compartments:
+
+$$
+S(TE) = \sum_{i=1}^{N} A_i e^{-TE/T_{2,i}}
+$$
+
+where:
+
+- $N$ is the number of water compartments.
+- $A_i$ is the initial signal amplitude of compartment $i$.
+- $T_{2,i}$ is its corresponding T2 relaxation time.
+
+In the context of brain imaging, two important water compartments are commonly considered:
+
+- **Myelin water (MW):** Water trapped between the myelin bilayers, characterized by a relatively short T2 relaxation time.
+- **Intra- and extracellular water (IEW):** Water located inside and outside cells, characterized by a longer T2 relaxation time.
+
+The distinction between these compartments provides the basis for Myelin Water Fraction imaging.
+
+## 4. Applications of Multi-exponential T2 Mapping
+
+### 4.1 Myelin Water Fraction Imaging
+
+Myelin Water Fraction (MWF) imaging is an application of multi-exponential T2 Mapping that aims to estimate the fraction of the MRI signal associated with myelin water.
+
+Myelin is an essential component of the central nervous system, where it surrounds axons and contributes to efficient nerve signal transmission.
+
+Changes in myelin content are associated with several neurological conditions, including multiple sclerosis.
+
+MWF has therefore been investigated as a potential quantitative biomarker of myelin integrity.
+
+The conventional initial-amplitude definition of MWF is:
+
+$$
+MWF = \frac{A_{MW}}{A_{MW}+A_{IEW}} \times 100
+$$
+
+where $A_{MW}$ and $A_{IEW}$ represent the initial signal amplitudes of the myelin water and intra- and extracellular water compartments, respectively.
+
+Since myelin water has a shorter T2 relaxation time, its signal decays faster than the signal from the IEW compartment.
+
+This difference in relaxation times allows the two water contributions to be distinguished through multi-exponential fitting.
+
+### 4.2 Other applications
+
+Multi-exponential T2 Mapping and related quantitative MRI techniques can also be used to investigate tissue microstructure and water compartment properties.
+
+Other applications include the study of T2* relaxation and quantitative susceptibility mapping (QSM).
+
+### 4.3 Benefits and limitations
+
+Quantitative T2 Mapping provides information about tissue properties that is not directly available from conventional MRI contrast images.
+
+However, multi-exponential fitting can be challenging because different water compartments may have overlapping relaxation times.
+
+The estimated parameters can also be affected by noise, acquisition settings, model assumptions and fitting methods.
+
+MWF should therefore be interpreted as an indirect measure of myelin-associated water rather than a direct measurement of myelin content.
+
+## 5. Interactive activities: Myelin Water Fraction
+
+The following activities explore the principles of MWF imaging through simplified simulations and visualizations.
+
+They are designed to complement the theoretical concepts introduced above.
+
+:::{seealso}
+Explore the interactive activities:
+
+- {doc}`mwf_interactive`: Understand how MWF and T2 relaxation times influence signal decay.
+- {doc}`mwf_maps`: Explore the spatial distribution of MWF values using simulated maps.
+- {doc}`healthy_demyelinated`: Compare simplified healthy and demyelinated tissue models.
 :::
-
-### Additional learning activities
-
-The following interactive activities have been added to provide a deeper understanding of Myelin Water Fraction (MWF) imaging.
