@@ -1,36 +1,43 @@
 ---
-title: MWF MyST Book
-description: An interactive book built with MyST
+title: Quantitative MRI – T2 Mapping
 ---
 
-:::{tip} Start here
-This is a template. Replace this page, and the chapters listed in the sidebar, with
-your own content.
+# Quantitative MRI: T2 Mapping
 
-Your first job is simply to get it **published**: use this template, enable GitHub
-Pages once, and let the Action build your site. Then start writing.
-:::
+Welcome to this interactive learning resource dedicated to **T2 Mapping in Magnetic Resonance Imaging (MRI)**.
 
-## About this book
+This book explores the physical principles behind T2 relaxation, the methods used to estimate T2 values, and some of their applications in medical imaging.
 
-**TODO:** replace this with a paragraph about what your book covers.
+It combines theoretical explanations with interactive visualizations and educational simulations to help understand how quantitative MRI techniques work.
 
-Built with [MyST Markdown](https://mystmd.org): Markdown for the prose, Jupyter
-notebooks for the computation, one `myst.yml` for the configuration, and a GitHub
-Action that rebuilds and republishes on every push.
+## What will you learn?
 
-## Why interactive?
+Throughout this book, you will explore:
 
-A static figure is one parameter choice out of infinitely many, frozen at publication.
-The author explored a whole parameter space; the reader gets one frame of it.
+- **T2 relaxation:** Understand the physical mechanisms underlying transverse relaxation and signal decay.
+- **T2 Mapping:** Discover how T2 relaxation times can be estimated from MRI measurements.
+- **Multi-exponential T2 analysis:** Explore the different water compartments contributing to the MRI signal.
+- **Myelin Water Fraction (MWF):** Understand how multi-exponential T2 mapping can be used to investigate myelin-associated water and its potential applications in neurological diseases.
 
-An interactive figure hands that space back. It costs almost nothing to add, and it
-often explains in three seconds what a paragraph of caption cannot.
+## Interactive learning activities
 
-## What's here
+This book also includes interactive activities designed to illustrate the concepts introduced in the theoretical sections.
 
-- [](./01-getting-started.md) — how to build, publish and debug this book
-- [](./02-interactive-figures.md) — the interactive figure pattern, with a worked example
+You will be able to modify model parameters, visualize changes in MRI signal decay, and explore the relationship between T2 relaxation and the Myelin Water Fraction.
 
-Add your own pages by creating a `.md` file and listing it in the `toc` section of
-`myst.yml`.
+These simulations are intended to provide an intuitive understanding of quantitative MRI techniques.
+
+## Contents
+
+The book is organized into the following sections:
+
+1. **T2 Mapping:** Physical principles, signal models and applications.
+2. **Myelin Water Fraction:** Interactive simulations exploring MWF, tissue models and spatial MWF maps.
+
+## How to use this book
+
+You can navigate through the different sections using the table of contents.
+
+The interactive figures allow you to modify parameters and observe their effects directly. We encourage you to experiment with the different settings and consider how they influence the resulting MRI signal.
+
+Enjoy exploring quantitative MRI!
