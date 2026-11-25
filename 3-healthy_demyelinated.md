@@ -39,5 +39,4 @@ This is a simplified educational model. A decrease in MWF may be associated with
 :::
 
 :::{include} notebooks/healthy_demyelinated.ipynb
-:tags: [hide-input]
 :::
