@@ -41,5 +41,4 @@ The MWF defined above corresponds to the signal fraction at $TE=0$. The relative
 The following notebook provides an interactive visualization of the biexponential signal decay and the relative myelin water contribution over echo time.
 
 :::{include} notebooks/mwf_interactive.ipynb
-:tags: [hide-input]
 :::
