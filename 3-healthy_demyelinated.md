@@ -1,5 +1,8 @@
 ---
 title: Healthy and Demyelinated Tissue
+kernelspec:
+  name: python3
+  display_name: Python 3
 ---
 
 # Healthy and Demyelinated Tissue
@@ -36,4 +39,5 @@ This is a simplified educational model. A decrease in MWF may be associated with
 :::
 
 :::{include} notebooks/healthy_demyelinated.ipynb
+:tags: [hide-input]
 :::
