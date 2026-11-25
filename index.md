@@ -1,5 +1,5 @@
 ---
-title: My MyST Book
+title: MWF MyST Book
 description: An interactive book built with MyST
 ---
 
