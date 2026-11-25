@@ -58,27 +58,27 @@ project:
       # a duplicate of the figure. Add new chapters here as well as in `toc`.
       articles:
         - file: index.md
-        - file: 01-getting-started.md
-        - file: 02-interactive-figures.md
         - file: T2_mapping.md
-        - file: mwf_interactive.md
-        - file: mwf_maps.md
-        - file: healthy_demyelinated.md
+        - file: 1-mwf_interactive.md
+        - file: 2-mwf_maps.md
+        - file: 3-healthy_demyelinated.md
 
   toc:
     - file: index.md
-    - file: 01-getting-started.md
-    - file: 02-interactive-figures.md
     - file: T2_mapping.md
-    - file: mwf_interactive.md
-    - file: mwf_maps.md
-    - file: healthy_demyelinated.md
+    - file: 1-mwf_interactive.md
+    - file: 2-mwf_maps.md
+    - file: 3-healthy_demyelinated.md
     # Notebooks must appear in the toc for MyST to build (and execute) them --
     # otherwise `:::{figure} #label` has nothing to embed and silently renders empty.
     # `hidden: true` keeps it built and referenceable without publishing it as a
     # chapter of its own, so the reader gets the figure in context rather than a
     # second copy next to a page of source code.
-    - file: notebooks/figure-demo.ipynb
+    - file: notebooks/mwf_interactive.ipynb
+      hidden: true
+    - file: notebooks/mwf_maps.ipynb
+      hidden: true
+    - file: notebooks/healthy_demelyelinated.ipynb
       hidden: true
 
 site:
