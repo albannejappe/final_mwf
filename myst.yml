@@ -2,11 +2,11 @@
 version: 1
 project:
   # TODO: make this yours
-  title: 'My MyST Book'
+  title: 'MWF MyST Book'
   subtitle: An interactive book built with MyST
   # TODO: add yourself. This is the same author schema a real MOOC contribution uses.
   authors:
-    - name: Your Name
+    - name: Albanne Jappé - 2554986
       affiliations:
         - Polytechnique Montréal
   copyright: '2026'
@@ -60,11 +60,13 @@ project:
         - file: index.md
         - file: 01-getting-started.md
         - file: 02-interactive-figures.md
+        - file: T2_mapping.md
 
   toc:
     - file: index.md
     - file: 01-getting-started.md
     - file: 02-interactive-figures.md
+    - file: T2_mapping.md
     # Notebooks must appear in the toc for MyST to build (and execute) them --
     # otherwise `:::{figure} #label` has nothing to embed and silently renders empty.
     # `hidden: true` keeps it built and referenceable without publishing it as a
