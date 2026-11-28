@@ -3,10 +3,6 @@ title: Quantitative MRI – T2 Mapping
 ---
 
 Choses à modifier:
-- voir le pb des graphes qui ne s'affichent pas (widget)
-- remettre le contenu actuel du mooc dans un menu déroulant pour montrer tout ce que j'ai ajouté
-- peut etre pas nécessaire de réexpliquer tout la partie du multi exponantial T2 mapping (partie déja présente dans le mooc)
-- ajouter un exo comme dans le mooc?
 - ajouter des images de vrai IRM pour mieux comprendre concrètement ce que c'est la MWF et comment ça s'applique
 
 
