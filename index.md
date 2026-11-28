@@ -2,10 +2,6 @@
 title: Quantitative MRI – T2 Mapping
 ---
 
-Choses à modifier:
-- ajouter des images de vrai IRM pour mieux comprendre concrètement ce que c'est la MWF et comment ça s'applique
-
-
 # Quantitative MRI: T2 Mapping
 
 Welcome to this interactive learning resource dedicated to **T2 Mapping in Magnetic Resonance Imaging (MRI)**.
