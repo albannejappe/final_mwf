@@ -17,7 +17,7 @@ By estimating the **Myelin Water Fraction (MWF)** voxel by voxel across an imagi
 
 ---
 
-## 1. Real *in vivo* Brain MRI Example (qMRLab Dataset)
+## Real *in vivo* Brain MRI Example (qMRLab Dataset)
 
 To see what a quantitative MWF map looks like in practice, the interactive visualization below displays **real *in vivo* human brain MRI data downloaded directly from the official [qMRLab](https://qmrlab.org/) example dataset** (`mwf` model).
 
@@ -35,7 +35,7 @@ This dataset consists of a multi-echo $T_2$ (CPMG) acquisition fitted voxel by v
 
 ---
 
-## 2. Interactive Simulation: Healthy vs. Demyelinated Brain Slice
+## Interactive Simulation: Healthy vs. Demyelinated Brain Slice
 
 While the real qMRLab dataset above illustrates a healthy brain, simulations help us visualize how pathology alters these maps. Use the buttons above the figure below to switch between a **healthy brain model** and a brain containing a **focal demyelinating lesion** in the left periventricular white matter:
 
@@ -44,7 +44,7 @@ While the real qMRLab dataset above illustrates a healthy brain, simulations hel
 
 ---
 
-## 3. Guided Interpretation Exercise
+## Guided Interpretation Exercise
 
 Compare the maps in the visualizations above:
 
