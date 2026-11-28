@@ -13,6 +13,23 @@ This interactive activity explores the relationship between the **Myelin Water F
 
 ---
 
+::::{dropdown} Original content from the qMRI mOOC (qMRLab)
+:color: info
+:icon: book
+
+*The following section presents the original Myelin Water Fraction content from the [qMRI mOOC T2 Mapping chapter](https://qmrlab.org/mooc/t2-mapping/):*
+
+Myelin water fraction (MWF) imaging is one of the most common applications of multi-exponential $T_2$ mapping. Myelin is a lipid-rich substance that surrounds axons in the central nervous system and facilitates rapid nerve signal conduction. In neurological disorders such as multiple sclerosis, demyelination leads to a reduction in myelin content, making MWF a valuable quantitative biomarker for monitoring disease progression and treatment efficacy.
+
+In multi-exponential $T_2$ mapping of white matter, the $T_2$ distribution typically exhibits two main components: a short-$T_2$ peak ($T_2 < 40\text{ ms}$) attributed to water trapped between the myelin bilayers, and an intermediate-$T_2$ peak ($T_2 \approx 60\text{–}120\text{ ms}$) corresponding to intra- and extracellular water.
+
+The Myelin Water Fraction is defined as the ratio of the area under the short-$T_2$ peak (myelin water) to the total area under the $T_2$ distribution:
+
+$$
+MWF = \frac{\int_{T_{2,\min}}^{40\text{ ms}} S(T_2)\,dT_2}{\int_{T_{2,\min}}^{T_{2,\max}} S(T_2)\,dT_2}
+$$
+::::
+
 ## Bi-exponential signal model
 
 In white matter, the transverse MRI signal can be modeled as the sum of two main water compartments:
