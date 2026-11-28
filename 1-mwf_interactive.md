@@ -19,15 +19,22 @@ This interactive activity explores the relationship between the **Myelin Water F
 
 *The following section presents the original Myelin Water Fraction content from the [qMRI mOOC T2 Mapping chapter](https://qmrlab.org/mooc/t2-mapping/):*
 
-Myelin water fraction (MWF) imaging is one of the most common applications of multi-exponential $T_2$ mapping. Myelin is a lipid-rich substance that surrounds axons in the central nervous system and facilitates rapid nerve signal conduction. In neurological disorders such as multiple sclerosis, demyelination leads to a reduction in myelin content, making MWF a valuable quantitative biomarker for monitoring disease progression and treatment efficacy.
+Myelin water fraction (MWF) imaging demonstrates the clinical relevance of multi-exponential _T_{sub}`2` mapping [@Kumar2012-uv;@MacKay1994-yv], given that myelin quantification could help identify potential biomarkers for diseases such as multiple sclerosis (MS). Although MWF technically does not directly measure myelin but rather quantifies the amount of total water trapped between the myelin sheaths, it is argued that myelin can be conceptualized as water, as it constitutes its primary composition [@Alonso-Ortiz2015-yj]. 
 
-In multi-exponential $T_2$ mapping of white matter, the $T_2$ distribution typically exhibits two main components: a short-$T_2$ peak ($T_2 < 40\text{ ms}$) attributed to water trapped between the myelin bilayers, and an intermediate-$T_2$ peak ($T_2 \approx 60\text{–}120\text{ ms}$) corresponding to intra- and extracellular water.
+Conventional _T_{sub}`2`-weighted images often display hyperintense lesions in MS patients. Unfortunately, these hyperintensities lack specificity for the disease and can be indistinguishable from other biological phenomena such as inflammation, edema and axonal loss [@Alonso-Ortiz2015-yj;@Lee2021-jk]. MWF holds promise as a potential biomarker for identifying early microstructural changes in myelin, which could improve our understanding of demyelinating diseases such as MS, facilitating both early diagnosis and monitoring of disease progression. 
 
-The Myelin Water Fraction is defined as the ratio of the area under the short-$T_2$ peak (myelin water) to the total area under the $T_2$ distribution:
+As described by [](#t2Eq8), MWF represents the proportion of the MRI signal attributed to myelin water relative to the total water content in the brain. This total water content includes myelin water (MW) and intra/extracellular water (IEW), also referred to as axonal water [@Lee2021-jk]. 
 
-$$
-MWF = \frac{\int_{T_{2,\min}}^{40\text{ ms}} S(T_2)\,dT_2}{\int_{T_{2,\min}}^{T_{2,\max}} S(T_2)\,dT_2}
-$$
+```{math}
+:label: t2Eq8
+:enumerator:3.8
+\begin{equation}
+\textit{MWF} = \frac{S_{MW}}{S_{MW} + S_{IEW}}
+\end{equation}
+```
+
+Direct imaging of myelin itself is challenging due to its very short _T_{sub}`2` relaxation times. Instead, an alternative is to image myelin-associated water (MW), which has slightly longer _T_{sub}`2` relaxation times, typically around 20 ms [@Lee2021-jk]. While these times are still short, they are measurable with standard spin-echo MRI sequences. Myelin Water Fraction (MWF) imaging takes advantage of this to differentiate and quantify the signal from myelin-associated water, providing a more feasible approach to studying myelin. 
+
 ::::
 
 ## Bi-exponential signal model
