@@ -4,7 +4,6 @@ title: Quantitative MRI – T2 Mapping
 
 Choses à modifier:
 - voir le pb des graphes qui ne s'affichent pas (widget)
-- demander un résumé complet de chaque partie pour comprendre tout le site
 - remettre le contenu actuel du mooc dans un menu déroulant pour montrer tout ce que j'ai ajouté
 - peut etre pas nécessaire de réexpliquer tout la partie du multi exponantial T2 mapping (partie déja présente dans le mooc)
 - ajouter un exo comme dans le mooc?
@@ -16,6 +15,14 @@ Choses à modifier:
 Welcome to this interactive learning resource dedicated to **T2 Mapping in Magnetic Resonance Imaging (MRI)**.
 
 This book explores the physical principles behind T2 relaxation, the methods used to estimate T2 values, and some of their applications in medical imaging.
+
+:::{note} Context & Contributions to the qMRI mOOC
+This interactive book builds upon and expands the **Myelin Water Fraction (MWF)** section of the [qMRI mOOC (T2 Mapping chapter)](https://qmrlab.org/mooc/t2-mapping/) developed by **qMRLab**. While the original mOOC introduces the theoretical foundations of multi-exponential $T_2$ mapping, this resource adds hands-on, browser-based interactive tools to build physical and clinical intuition:
+
+- **Interactive bi-exponential simulations:** Dynamically adjust MWF and compartmental $T_2$ relaxation times to observe their real-time impact on signal decay and relative myelin water contribution.
+- **Spatial MWF mapping:** Explore voxel-by-voxel MWF distribution and compare synthetic maps with real brain MRI examples.
+- **Pathological modeling:** Contrast healthy white matter with demyelinated tissue models (e.g., multiple sclerosis lesions) alongside guided self-assessment exercises.
+:::
 
 It combines theoretical explanations with interactive visualizations and educational simulations to help understand how quantitative MRI techniques work.
 
